@@ -33,6 +33,7 @@ contract UnstoppableMonitor is Owned, IERC3156FlashBorrower {
         return keccak256("IERC3156FlashBorrower.onFlashLoan");
     }
 
+
     function checkFlashLoan(uint256 amount) external onlyOwner {
         require(amount > 0);
 

